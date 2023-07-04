@@ -3,8 +3,8 @@ import Header from '../components/layout/Header';
 
 
 export const metadata = {
-  title: 'Walthércio Portfolio - web developer',
-  description: 'Walthércio Almeida, web developer',
+  title: 'Desenvolvedor Web - Walthércio ',
+  description: 'Walthércio Almeida, Desenvolvedor Web Full-stack Node.js, Reactjs',
 }
 
 export default function RootLayout({ children }) {
@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
     </head>
     <body>
       <Header />
-      <main>{children}</main>
+      <>{children}</>
     </body>
   </html>
   )
