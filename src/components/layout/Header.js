@@ -7,11 +7,11 @@ export default function Header() {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
 	return (
-		<header className='fixed top-0 left-0 right-0 z-10 text-white'>
-			<nav
-				className='mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8 mb'
-				aria-label='Global'
-			>
+		<header className='fixed top-0 left-0 right-0 z-10 text-white backdrop-blur-xl bg-black/30'>
+	<nav
+		className='mx-auto flex max-w-5xl items-center justify-between p-2 lg:px-8 mb'
+		aria-label='Global'
+	>
 				<div className='flex items-center'>
 					{/* <a href="/" className="-m-1.5 p-1.5 mr-0">
             <img
@@ -20,7 +20,7 @@ export default function Header() {
               src=""
             />
           </a> */}
-					<p className='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'>
+					<p className='self-center text-1xl font-semibold whitespace-nowrap dark:text-white'>
 						WALTHERCIO
 					</p>
 				</div>
