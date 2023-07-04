@@ -1,11 +1,11 @@
 import Introduction from "@/components/Sections/Introduction";
-import Steps from "@/components/Sections/Steps";
-
+import About from "@/components/Sections/About";
 export default function Home() {
   return (
     <main>
       <Introduction />
-      <Steps />
+      <About />
+      
     </main>
   )
 }
