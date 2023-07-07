@@ -3,6 +3,10 @@ import { FaSuitcase, FaBook } from "react-icons/fa";
 export default function Steps() {
   return (
     <section> 
+		<div class='px-4 mx-auto max-w-screen-xl py-12 '>
+		<h1 class='mb-8 font-extrabold tracking-tight leading-none text-gray-900 text-4xl'>
+		Experiencia e educação
+				</h1>
 		<ol class='relative text-gray-500 border-l border-gray-600'>
 			<li class='mb-5 ml-6'>
 				<span class='absolute flex items-center justify-center w-8 h-8 bg-blue-700 rounded-full -left-4 ring-4 ring-white text-white'>
@@ -62,6 +66,7 @@ export default function Steps() {
 				<p class='text-sm'>Jun 2023 - Jun 2027</p>
 			</li>
       </ol>
+	  </div>
       </section>
 	);
 }
