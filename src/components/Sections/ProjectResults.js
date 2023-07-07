@@ -1,7 +1,7 @@
 export default function ProjectResults() {
 	return (
 		<section>
-			<div class='px-4 mx-auto max-w-screen-xl py-12 '>
+			<div class='px-4 mx-auto max-w-screen-xl py-12  '>
 				<h1 class='mb-8 font-extrabold tracking-tight leading-none text-gray-900 text-4xl'>
 					Destaques
 				</h1>
@@ -27,10 +27,7 @@ export default function ProjectResults() {
 						Criação de uma carteira de controle de gastos com conversor de moedas,
 						utilizando Redux, React Testing Library e consumo de API.
 					</li>
-			
 
-				
-				
 					<li class='mb-5 ml-2'>
 						<span class='animate-bounce absolute flex items-center justify-center w-1 h-1 bg-gray-700 rounded-full -left-1 ring-1 ring-green-700'></span>
 						Todos os projetos entregues no tempo mínimo estipulado.
