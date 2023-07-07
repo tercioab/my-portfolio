@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
         <meta name="robots" content="index, follow" />
 
     </head>
-    <body>
+    <body class="bg-gray-100">
       <Header />
       <>{children}</>
     </body>
