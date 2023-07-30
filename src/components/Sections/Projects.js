@@ -25,8 +25,9 @@ export default function Projects() {
 
 
 
-        <>
-        </>
-		
+<div class="grid grid-cols-2">
+   {props.map((prop, i) => <LinkCard key={i} {...prop} />)}
+</div>
+
 	);
 }

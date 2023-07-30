@@ -5,7 +5,7 @@ import Header from '../components/layout/Header';
 export const metadata = {
   title: 'Desenvolvedor Web - Walthércio ',
   description: 'Walthércio Almeida, Desenvolvedor Web Full-stack Node.js, Reactjs',
-}it
+}
 
 export default function RootLayout({ children }) {
   return (
