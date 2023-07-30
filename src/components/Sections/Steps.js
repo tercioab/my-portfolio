@@ -8,13 +8,7 @@ export default function Steps() {
 		Experiencia e educação
 				</h1>
 		<ol class='relative text-gray-500 border-l border-gray-600'>
-			<li class='mb-5 ml-6'>
-				<span class='absolute flex items-center justify-center w-8 h-8 bg-blue-700 rounded-full -left-4 ring-4 ring-white text-white'>
-					<FaSuitcase />
-				</span>
-				<h3 class='font-medium leading-tight'>Assistente de cozinheiro</h3>
-				<p class='text-sm'>Jun 2016 - Aug 2017</p>
-			</li>
+			
 
 			<li class='mb-5 ml-6'>
 				<span class='absolute flex items-center justify-center w-8 h-8 bg-blue-700 rounded-full -left-4 ring-4 ring-white text-white'>
@@ -60,7 +54,7 @@ export default function Steps() {
 
 			<li class='ml-6'>
 				<span class='absolute flex items-center justify-center w-8 h-8 bg-green-400 rounded-full -left-4 ring-4 ring-white text-white'>
-					<FaSuitcase />
+				<FaBook />
 				</span>
 				<h3 class='font-medium leading-tight'>Bachelor degree, Computer Science</h3>
 				<p class='text-sm'>Jun 2023 - Jun 2027</p>
