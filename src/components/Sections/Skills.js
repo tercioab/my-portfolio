@@ -51,7 +51,7 @@ export default function Skills() {
               <img
                 src={skill.src}
                 alt={`${skill.title} logo`}
-                className="w-16"
+                className="w-16 "
               />
               <p className="text-center text-black mt-1 text-xs font-medium text-slate-400">{skill.title}</p>
             </div>

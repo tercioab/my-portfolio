@@ -3,7 +3,7 @@ export default function LinkedinButton({ link, text }) {
         <a
         href={link}
         type='button'
-        class='text-white bg-[#0077B5] hover:bg-[#00669D]/90 focus:ring-4 focus:outline-none focus:ring-[#00669D]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 mr-2 mb-2'
+        class='text-white bg-[#0077B5] hover:bg-[#00669D]/90 focus:ring-4 focus:outline-none focus:ring-[#00669D]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 mr-2 mb-20'
     >
         <svg
             class='w-4 h-4 mr-2'

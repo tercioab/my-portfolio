@@ -55,16 +55,13 @@ export default function Projects() {
 			spaceBetween: 1, // Espaçamento entre os slides
 			  direction: "horizontal",
 			  loop: true,
-			// scrollbar: {
-			//   el: ".swiper-scrollbar",
-			//   hide: true, // Oculta a barra de rolagem inferior
-			// },
 		  });
 		}
 	  }, []);
 	
-	  return (
-		<div className="max-w-screen-lg mx-auto p-4 mt-8 mb-10 overflow-x-hidden">
+	return (
+		  <div className="max-w-screen-xl mx-auto p-4  mb-10 overflow-x-hidden  bg-gradient-to-r from-slate-300 to-slate-200 rounded-3xl shadow-md">
+		<div className="max-w-screen-lg mx-auto p-4 mt-8 mb-10 overflow-x-hidden ">
 		  <h1 className="text-3xl font-bold text-center mb-8">Meus Projetos</h1>
 		  <div className="swiper-container">
 			<div className="swiper-wrapper flex">
@@ -79,6 +76,7 @@ export default function Projects() {
 			</div>
 			<div className="swiper-scrollbar"></div>
 		  </div>
+		</div>
 		</div>
 	  );
 	}
