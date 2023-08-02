@@ -55,10 +55,10 @@ export default function Projects() {
 			spaceBetween: 1, // Espaçamento entre os slides
 			  direction: "horizontal",
 			  loop: true,
-			scrollbar: {
-			  el: ".swiper-scrollbar",
-			  hide: true, // Oculta a barra de rolagem inferior
-			},
+			// scrollbar: {
+			//   el: ".swiper-scrollbar",
+			//   hide: true, // Oculta a barra de rolagem inferior
+			// },
 		  });
 		}
 	  }, []);

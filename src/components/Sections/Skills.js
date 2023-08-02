@@ -41,7 +41,7 @@ export default function Skills() {
 
   return (
 	  <div className="relative -top-10">
-		    <p className="text-center absolute top-1/2 w-full text-xl -top-10 z-20 text-slate-300">
+		    <p className="text-center absolute top-1/2 w-full text-xl -top-8 z-20 text-slate-700">
         Minhas skills
       </p>
       <div className="flex justify-center items-center">
@@ -50,7 +50,7 @@ export default function Skills() {
             <div key={i} className="m-4">
               <img
                 src={skill.src}
-                alt={skill.title + " logo"}
+                alt={`${skill.title} logo`}
                 className="w-16"
               />
               <p className="text-center text-black mt-1 text-xs font-medium text-slate-400">{skill.title}</p>
