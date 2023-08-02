@@ -9,57 +9,52 @@ export default function Projects() {
 			title: "Car Shop",
 
 			description:
-				"Este projeto consiste no desenvolvimento de uma API para uma concessionária automotiva, utilizando Node.js, Express e Mongoose. A API é responsável por gerenciar os dados relacionados aos veículos disponíveis na concessionária",
+				"Este é um projeto de uma loja de veículos que utiliza Node.js e Express para construir as APIs, bem como o Mongoose como ODM para lidar com o banco de dados MongoDB. Além disso, o projeto usa o mocha e chai para testes unitarios fazendo stubs com sinon.",
 			link: "https://github.com/tercioab/car_shop_POO",
-		},
+		},			
 		{
-			title: "Car Shop",
+			title: "Tfc Project",
 
 			description:
-				"Este projeto consiste no desenvolvimento de uma API para uma concessionária automotiva, utilizando Node.js, Express e Mongoose. A API é responsável por gerenciar os dados relacionados aos veículos disponíveis na concessionária",
-			link: "https://github.com/tercioab/car_shop_POO",
+				"API RESTful que se conecte a um banco de dados mySQL via Sequelize para ler, criar, filtrar, atualizar os dados, entre outros. As seguintes rotas foram criadas: login, partidas, equipes e líder de placar.",
+			link: "https://github.com/tercioab/TFC-PROJECT-POO",
 		},
 		{
-			title: "Car Shop",
+			title: "Blogs Api",
 
 			description:
-				"Este projeto consiste no desenvolvimento de uma API para uma concessionária automotiva, utilizando Node.js, Express e Mongoose. A API é responsável por gerenciar os dados relacionados aos veículos disponíveis na concessionária",
-			link: "https://github.com/tercioab/car_shop_POO",
+				"API RESTful para um sistema de blogs. Ele foi construído usando Node.js e Express, e utiliza um banco de dados MySQL para armazenar informações sobre usuários, categorias de postagens e postagens propriamente ditas.",
+			link: "https://github.com/tercioab/blogs-api",
 		},
 		{
-			title: "Car Shop",
+			title: "Star Wars search planet",
 
 			description:
-				"Este projeto consiste no desenvolvimento de uma API para uma concessionária automotiva, utilizando Node.js, Express e Mongoose. A API é responsável por gerenciar os dados relacionados aos veículos disponíveis na concessionária",
-			link: "https://github.com/tercioab/car_shop_POO",
+				"Uma lista com filtros de planetas do universo de Star Wars usando Context API e Hooks para controlar os estados globais.",
+			link: "https://github.com/tercioab/StarWars-search-planets",
 		},
 		{
-			title: "Car Shop",
+			title: "Trybewallet",
 
 			description:
-				"Este projeto co], utilizando Node.js, Express e Mongoose. A API é responsável por gerenciar os dados relacionados aos veículos disponíveis na concessionária",
-			link: "https://github.com/tercioab/car_shop_POO",
+				"Uma carteira de controle de gastos com conversor de moedas, com estado goblal controlado pelo redux",
+			link: "https://github.com/tercioab/Trybewallet-",
 		},
 		{
-			title: "Car Shop",
-
-			description:" Mongoose. A API é responsável por gerenciar os dados relacionados aos veículos disponíveis na concessionária",
-			link: "https://github.com/tercioab/car_shop_POO",
-		},
-		{
-			title: "Car Shop",
+			title: "Truck Flow",
 
 			description:
-				"Este projeto consiste no desenvolvimento de uma API para uma concessionária automotiva, utilizando Node.js, Express e Mongoose. A API é responsável por gerenciar os dados relacionados aos veículos disponíveis na concessionária",
-			link: "https://github.com/tercioab/car_shop_POO",
+				"Projeto em andamento, consiste em uma aplicação que ira ajudar caminhoneiros a calcular os custos de uma viagem",
+			link: "https://github.com/tercioab/carflow-truck",
 		},
 	];
 	useEffect(() => {
 		if (typeof window !== "undefined") {
 		  new Swiper(".swiper-container", {
 			slidesPerView: "auto",
-			spaceBetween: 3, // Espaçamento entre os slides
-			direction: "horizontal", // Definindo a direção do slide como horizontal
+			spaceBetween: 1, // Espaçamento entre os slides
+			  direction: "horizontal",
+			  loop: true,
 			scrollbar: {
 			  el: ".swiper-scrollbar",
 			  hide: true, // Oculta a barra de rolagem inferior
@@ -70,19 +65,19 @@ export default function Projects() {
 	
 	  return (
 		<div className="max-w-screen-lg mx-auto p-4 mt-8 mb-10 overflow-x-hidden">
-		  <h1 className="text-3xl font-bold text-center mb-8">PROJETOS</h1>
+		  <h1 className="text-3xl font-bold text-center mb-8">Meus Projetos</h1>
 		  <div className="swiper-container">
 			<div className="swiper-wrapper flex">
 			  {props.map((prop, i) => (
 				<div
 				  key={i}
-				  className="swiper-slide flex-shrink-0 p-2 w-full sm:w-1/2 md:w-1/3 lg:w-1/4"
+				  className="swiper-slide flex-shrink-0 p-2 w-full sm:w-1/2 md:w-1/2 lg:w-1/1"
 				>
 				  <LinkCard {...prop} />
 				</div>
 			  ))}
 			</div>
-			<div className="swiper-scrollbar"></div> {/* Barra de rolagem */}
+			<div className="swiper-scrollbar"></div>
 		  </div>
 		</div>
 	  );
