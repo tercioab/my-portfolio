@@ -1,51 +1,73 @@
-'use client'
+"use client";
 import React, { useEffect } from "react";
 import Swiper from "swiper";
-
+import RecomendCard from "../comons/RecomendCard";
 
 export default function Recomendations() {
-  const props = [
-    { image: 'https://mail.google.com/mail/u/0?ui=2&ik=0ec3fcc32b&attid=0.2&permmsgid=msg-f:1773151690277399329&th=189b801157de2b21&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ-WhKDMoQY3EikXOyuoWi2Dg83-SlN_d14wCgKKV5qrZxf06kz_vjBxmFqSQx9GyEaKuNsUla1n8NRjD7rUSpdO0U_m0tCkl_eya9_07fcqBWvIytK-ONtctFA&disp=emb&realattid=ii_lku77o141' },
-    { image: 'https://mail.google.com/mail/u/0?ui=2&ik=0ec3fcc32b&attid=0.3&permmsgid=msg-f:1773151690277399329&th=189b801157de2b21&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ8cFoM0L9pQwoWXpf-xP_fA_NLawbHlcl9v1RkA6M968cPAL1dqUGe7YEFi1eypQHIZZaKonNI1s8YB_3ayxaPUFvwQ9WenXzPGh8ZzMgBTmbP9xbuUvcyWel0&disp=emb&realattid=ii_lku77tvf2' },
-    { image: 'https://mail.google.com/mail/u/0?ui=2&ik=0ec3fcc32b&attid=0.4&permmsgid=msg-f:1773151690277399329&th=189b801157de2b21&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ8yjWBdKFV4YT2YZBJPYhNzAN9P_FeA074CjjPqGed5yCevz4ncGjoFkwwGzXkt0CDg_KHaB2fTnm9pf5JUlnWMadl0stW1hQSP10Stp3YA6x3LjI6BaQUVtgc&disp=emb&realattid=ii_lku77wz13' },
-    { image: 'https://mail.google.com/mail/u/0?ui=2&ik=0ec3fcc32b&attid=0.1&permmsgid=msg-f:1773151690277399329&th=189b801157de2b21&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ-C_bnCRv4JrpNZYhQTO64uu92tKYma5rdkGwaAUvvYBF-XEMwPPFlfJ0o1EwQy8JU_2Sq_O-Q8WcYLFoM-B1YfygTGhbjKv2BQ_eQKjWZk5dwc4H6K7bT7byo&disp=emb&realattid=ii_lku77gum0' },
-  ];
+	const props = [
+		{
+			image:
+                "https://media.licdn.com/dms/image/D4D35AQFfvu_eFx6yXw/profile-framedphoto-shrink_800_800/0/1686060665526?e=1691629200&v=beta&t=2KiOC8olsJ5Tn7PMYXN9TVn42tD4Asgf-cJCqkFnkno",
+            name: 'André Horman',
+            title: 'Desenvolvedor Web',
+            text: `Walthercio é uma pessoa muito profissional, muito organizado com horário, tem excelente espírito de equipe.
+            Tive a oportunidade de trabalhar junto com ele fiquei impressionado demais com o quão profissional ele é como desenvolvedor web e Soft Skills.
+            Recomendo fortemente este profissional.`
+            
+		},
+		{
+			image:
+                "https://media.licdn.com/dms/image/C5603AQF_NQIysUd8AQ/profile-displayphoto-shrink_800_800/0/1650149083702?e=1696464000&v=beta&t=IS1TnOlBXr2atX63zkWUKQ-k-WrgFW4MMiJ4w8KQ_xI",
+            name: 'Diego Picoli ',
+            title: 'Desenvolvedor FullStack',
+            text: `Trabalhei com o Tercio em um projeto FullStack, onde ele foi o responsável pelo desenvolvimento da parte Backend. Além de ser um baita programador, o Tercio é um colega de equipe nota 10! Sempre colaborou de forma eficaz com todos da equipe para que a gente alcançasse os resultados esperados.`
+		},
+		{
+			image:
+				"https://media.licdn.com/dms/image/C4E03AQFS93T4c15cdg/profile-displayphoto-shrink_800_800/0/1646907968200?e=1696464000&v=beta&t=ai2iBHjItopntZYgdfxVquUbm4judmdwJGz9WAh-Ctg",
+                name: "Vitor Marcelo",
+                title: 'Desenvolvedor FullStack',
+                text: `Excelente profissional sempre cumpriu os prazos discutidos pelo grupo. Estava sempre disposta a discutir novas ideias e sempre propunha melhorias a serem implementadas no projeto. Um profissional completo, se saindo super bem no frontEnd e no BackEnd.`
+		},
+		{
+			image:
+				"https://media.licdn.com/dms/image/D4D03AQFZKPRlBB7HmA/profile-displayphoto-shrink_800_800/0/1686025058083?e=1696464000&v=beta&t=WyS7wn-U3OeMfOt9mBaWXuaLt1_W9HXRwOQyIxbekcE",
+                name: 'Rayane Pacote',
+                title: 'Desenvolvedora Web',
+                text: `Grande profissional, possui habilidades incríveis com o Back-end, pessoa altamente bem relacionado, dedicado e pé no chão. ótimo de se trabalhar e disposto a ajudar sempre que for preciso. possui todas as qualificações técnicas e interpessoais para entregar um trabalho de qualidade.`
+		},
+	];
 
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      new Swiper(".swiper-container", {
-        slidesPerView: "auto",
-        spaceBetween: 0, // Mantém o espaço entre os slides como 0
-        direction: "horizontal",
-        loop: true,
-      });
-    }
-  }, []);
-  
-  return (
-    <div className="">
-      <div className="max-w-screen-xl mx-auto p-4  mb-10 overflow-x-hidden  bg-gradient-to-r from-slate-300 to-slate-200 rounded-3xl shadow-md">
-        <h1 className="text-3xl font-bold text-center mb-8">Recomendações</h1>
-        <div className="swiper-container">
-          <div className="swiper-wrapper flex">
-            {props.map(({ image }, i) => (
-              <div
-                key={i}
-                className="swiper-slide flex-shrink-0 p-2 w-full sm:w-1/2 md:w-1/2 lg:w-1/1 mr-2" // Adicione a classe "mr-2" para reduzir a margem entre os elementos
-              >
-                <img
-                  src={image}
-                  alt={`Recomendação ${i + 1}`}
-                  className="w-full h-auto max-w-2xl max-h-96" // Classe para ajustar o tamanho da imagem
-                />
-              </div>
-            ))}
-          </div>
-          <div className="swiper-scrollbar"></div>
-        </div>
-      </div>
-    </div>
-  );
-  
-  
+	useEffect(() => {
+		if (typeof window !== "undefined") {
+			new Swiper(".swiper-container", {
+				slidesPerView: "auto",
+				direction: "horizontal",
+				loop: true,
+			});
+		}
+	}, []);
+
+	return (
+        <div className=' max-w-screen-xl mx-auto p-4  mb-10 overflow-x-hidden  '>
+        <h1 className='text-3xl font-bold text-center mt-10 text-black'>
+        {`< Recomendações />`}
+        </h1>
+        <div className=' overflow-x-hidden border-x-2 border-green-400 rounded-3xl p-10 mx-10 mb-8'>
+            <div className='swiper-container border-x-2 border-gray-200 rounded-lg '>
+                <div className='swiper-wrapper flex  '>
+						{props.map((props, i) => (
+							<div
+								key={i}
+								className='swiper-slide flex-shrink-0 p-5 w-full sm:w-1/2 md:w-1/2 lg:w-1/1 '
+							>
+								<RecomendCard {...props} />
+							</div>
+						))}
+					</div>
+					<div className='swiper-scrollbar'></div>
+				</div>
+			</div>
+		</div>
+	);
 }

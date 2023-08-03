@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import { useEffect } from "react";
 import LinkCard from "../comons/LinkCard";
 import Swiper from "swiper";
@@ -11,7 +11,7 @@ export default function Projects() {
 			description:
 				"Este é um projeto de uma loja de veículos que utiliza Node.js e Express para construir as APIs, bem como o Mongoose como ODM para lidar com o banco de dados MongoDB. Além disso, o projeto usa o mocha e chai para testes unitarios fazendo stubs com sinon.",
 			link: "https://github.com/tercioab/car_shop_POO",
-		},			
+		},
 		{
 			title: "Tfc Project",
 
@@ -50,33 +50,35 @@ export default function Projects() {
 	];
 	useEffect(() => {
 		if (typeof window !== "undefined") {
-		  new Swiper(".swiper-container", {
-			slidesPerView: "auto",
-			spaceBetween: 1, // Espaçamento entre os slides
-			  direction: "horizontal",
-			  loop: true,
-		  });
+			new Swiper(".swiper-container-projects", {
+				slidesPerView: "auto",
+				spaceBetween: 1, // Espaçamento entre os slides
+				direction: "horizontal",
+				loop: true,
+			});
 		}
-	  }, []);
-	
+	}, []);
+
 	return (
-		  <div className="max-w-screen-xl mx-auto p-4  mb-10 overflow-x-hidden  bg-gradient-to-r from-slate-300 to-slate-200 rounded-3xl shadow-md">
-		<div className="max-w-screen-lg mx-auto p-4 mt-8 mb-10 overflow-x-hidden ">
-		  <h1 className="text-3xl font-bold text-center mb-8">Meus Projetos</h1>
-		  <div className="swiper-container">
-			<div className="swiper-wrapper flex">
-			  {props.map((prop, i) => (
-				<div
-				  key={i}
-				  className="swiper-slide flex-shrink-0 p-2 w-full sm:w-1/2 md:w-1/2 lg:w-1/1"
-				>
-				  <LinkCard {...prop} />
+		<div className=' max-w-screen-xl mx-auto p-4  mb-10 overflow-x-hidden '>
+			<h1 className='text-3xl font-bold text-center mt-10 text-black'>
+			{`< Meus Projetos />`}
+			</h1>
+			<div className=' overflow-x-hidden border-x-2 border-green-400 rounded-3xl p-10 mx-10 mb-8'>
+			<div className='swiper-container-projects border-x-2 border-gray-200 rounded-lg'>
+					<div className='swiper-wrapper flex'>
+						{props.map((props, i) => (
+							<div
+								key={i}
+								className='swiper-slide flex-shrink-0 p-2 w-full sm:w-1/2 md:w-1/2 lg:w-1/1 '
+							>
+								<LinkCard {...props} />
+							</div>
+						))}
+					</div>
+					<div className='swiper-scrollbar'></div>
 				</div>
-			  ))}
 			</div>
-			<div className="swiper-scrollbar"></div>
-		  </div>
 		</div>
-		</div>
-	  );
-	}
+	);
+}

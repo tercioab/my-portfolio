@@ -3,7 +3,7 @@ import LinkedinButton from "../comons/buttons/LinkedinButton";
 
 export default function Introduction() {
 	return (
-		<section class="bg-slate-200 rounded-b-3xl shadow-md">
+		<section class="bg-slate-200 rounded-b-3xl  " >
 			<div class='px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56'>
 				<h2 class='mb-4 text-4xl font-extrabold tracking-tight leading-none bg-gradient-to-r from-slate-500 to-black text-transparent bg-clip-text md:text-5xl lg:text-6xl'>
 					Você Me Encontrou!

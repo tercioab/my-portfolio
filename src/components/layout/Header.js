@@ -8,7 +8,7 @@ export default function Header() {
 
 	return (
 		// bg-black/30
-		<header className='fixed top-0 left-0 right-0 z-10 text-white bg-black/60 backdrop-blur-xl rounded-b-3xl shadow-lg'>
+		<header className='fixed top-0 left-0 right-0 z-10 text-white bg-black/60 backdrop-blur-xl rounded-b-3xl shadow-lg  border-b-2 border-green-400'>
 	<nav
 		className='mx-auto flex max-w-5xl items-center justify-between p-2 lg:px-8 mb'
 		aria-label='Global'
@@ -22,7 +22,7 @@ export default function Header() {
             />
           </a> */}
 					<p className='self-center text-1xl font-semibold whitespace-nowrap dark:text-white'>
-						WALTHERCIO
+						{`< WALTHERCIO / >`}
 					</p>
 				</div>
 				<div className='flex lg:hidden'>
