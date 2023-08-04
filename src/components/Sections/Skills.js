@@ -43,7 +43,7 @@ export default function Skills() {
 	  <div className="relative -top-10">
 		  
       <div className="flex justify-center items-center">
-      <p className="text-center absolute top-1/2 w-full text-xl -top-8 text-slate-700 ">
+      <p className="text-center absolute top-1/2 w-full text-xl -top-20 text-slate-700 ">
         Minhas skills
       </p>
         <div className="flex flex-wrap justify-center">
