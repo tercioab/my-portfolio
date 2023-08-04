@@ -2,7 +2,6 @@
 import Carousel from "react-material-ui-carousel";
 import LinkCard from "../comons/LinkCard";
 
-
 export default function Projects() {
 	const props = [
 		{
@@ -50,24 +49,34 @@ export default function Projects() {
 	];
 
 	return (
-		<div className=' max-w-screen-xl mx-auto p-4  mb-10 overflow-x-hidden '><h1 className='text-3xl font-bold text-center mt-10 text-black'>
-		{`< Meus Projetos />`}
-	</h1>
+		<div className=' max-w-screen-xl mx-auto p-4  mb-10 overflow-x-hidden '>
+			<h1 className='text-3xl font-bold text-center mt-10 text-black'>
+				{`< Meus Projetos />`}
+			</h1>
 			<div className=' overflow-x-hidden border-x-4 border-green-400 rounded-3xl p-10 mx-10 mb-8'>
 				<div className='flex items-center justify-center  '>
 					<div className='w-full max-w-screen-lg border-x-2 border-gray-200 rounded-lg flex'>
-					<Carousel className='w-full h-full object-cover ' autoPlay={2500}  >
-						{props.map((props, i) => (
+						<Carousel
+							className='w-full h-full object-cover '
+							autoPlay={2000}
+							animation='slide'
+							PaperProps={{
+								style: {
+								  transition: 'transform 2s ease', // Adjust the duration here (e.g., 2s for 2 seconds)
+								},
+							  }}
+						>
+							{props.map((props, i) => (
 								<div key={i} className='flex justify-center p-2'>
-							<div
-								key={i}
-								className='swiper-slide flex-shrink-0 p-2 w-full sm:w-1/2 md:w-1/2 lg:w-1/1 '
-							>
-								<LinkCard {...props} />
-							</div>
-							</div>
-						))}
-					</Carousel>
+									<div
+										key={i}
+										className='swiper-slide flex-shrink-0 p-2 w-full sm:w-1/2 md:w-1/2 lg:w-1/1 '
+									>
+										<LinkCard {...props} />
+									</div>
+								</div>
+							))}
+						</Carousel>
 					</div>
 					<div className='swiper-scrollbar'></div>
 				</div>
