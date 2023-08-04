@@ -11,8 +11,6 @@ export default function Home() {
 			<About />
 			<Projects />
 			<Recomendations />
-
-			
 		</main>
 	);
 }
