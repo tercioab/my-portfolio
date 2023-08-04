@@ -48,14 +48,14 @@ export default function Projects() {
 			link: "https://github.com/tercioab/carflow-truck",
 		},
 	];
-	useEffect(() => {
-		new Swiper(".swiper-container-projects", {
-			slidesPerView: "auto",
-			spaceBetween: 1, // Espaçamento entre os slides
-			direction: "horizontal",
-			loop: true,
-		});
-	}, []);
+	// useEffect(() => {
+	// 	new Swiper(".swiper-container", {
+	// 		slidesPerView: "auto",
+	// 		spaceBetween: 1, // Espaçamento entre os slides
+	// 		direction: "horizontal",
+	// 		loop: true,
+	// 	});
+	// }, []);
 
 	return (
 		<div className=' max-w-screen-xl mx-auto p-4  mb-10 overflow-x-hidden '>
@@ -63,7 +63,7 @@ export default function Projects() {
 				{`< Meus Projetos />`}
 			</h1>
 			<div className=' overflow-x-hidden border-x-4 border-green-400 rounded-3xl p-10 mx-10 mb-8  '>
-				<div className='swiper-container-projects border-x-2 border-gray-200 rounded-lg'>
+				<div className='swiper-container border-x-2 border-gray-200 rounded-lg'>
 					<div className='swiper-wrapper flex '>
 						{props.map((props, i) => (
 							<div
