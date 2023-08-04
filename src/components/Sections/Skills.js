@@ -40,21 +40,20 @@ export default function Skills() {
   ];
 
   return (
-	  <div className="relative -top-10">
-		  
-      <div className="flex justify-center items-center">
-      <p className="text-center absolute top-1/2 w-full text-xl -top-20 text-slate-700 ">
+	  <div className="mt-12   mx-20 rounded-xl ">
+		    <p className="text-center  w-full text-sm text-black pt-4 ">
         Minhas skills
       </p>
-        <div className="flex flex-wrap justify-center">
+      <div className="flex justify-center items-center   ">
+        <div className="flex flex-wrap justify-center border-x-2  border-gray-200 rounded-xl">
           {skills.map((skill, i) => (
             <div key={i} className="m-4">
               <img
                 src={skill.src}
-                alt={`${skill.title} logo`}
-                className="w-16 "
+                alt={skill.title + " logo"}
+                className="w-16"
               />
-              <p className="text-center text-black mt-1 text-xs font-medium text-slate-400">{skill.title}</p>
+              <p className="text-center text-black mt-1 text-xs">{skill.title}</p>
             </div>
           ))}
         </div>

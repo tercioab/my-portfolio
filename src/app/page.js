@@ -6,7 +6,8 @@ import Recomendations from "@/components/Sections/Recomendations";
 export default function Home() {
 	return (
 		<main>
-			<Introduction />
+      <Introduction />
+     
 			<Skills />
 			<About />
 			<Projects />

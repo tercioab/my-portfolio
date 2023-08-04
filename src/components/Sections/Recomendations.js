@@ -1,7 +1,6 @@
-"use client";
-import React, { useEffect } from "react";
-import Swiper from "swiper";
+"use client"
 import RecomendCard from "../comons/RecomendCard";
+import Carousel from "react-material-ui-carousel";
 
 export default function Recomendations() {
 	const props = [
@@ -37,30 +36,28 @@ export default function Recomendations() {
 		},
 	];
 
-	useEffect(() => {
-		new Swiper(".swiper-container", {
-			slidesPerView: "auto",
-			direction: "horizontal",
-			loop: true,
-		});
-	}, []);
+	
 
 	return (
-		<div className=' max-w-screen-xl mx-auto p-4  mb-10 overflow-x-hidden  '>
-			<h1 className='text-3xl font-bold text-center mt-10 text-black'>
+		<div className=' max-w-screen-xl mx-auto p-4  mb-10 overflow-x-hidden '>
+				<h1 className='text-3xl font-bold text-center mt-10 text-black'>
 				{`< Recomendações />`}
 			</h1>
 			<div className=' overflow-x-hidden border-x-4 border-green-400 rounded-3xl p-10 mx-10 mb-8'>
-				<div className='swiper-container border-x-2 border-gray-200 rounded-lg '>
-					<div className='swiper-wrapper flex  '>
+				<div className='flex items-center justify-center  '>
+					<div className='w-full max-w-screen-lg border-x-2 border-gray-200 rounded-lg flex'>
+					<Carousel className='w-full h-full object-cover ' autoPlay={3000}  >
 						{props.map((props, i) => (
+							<div key={i} className='flex justify-center p-2'>
 							<div
 								key={i}
 								className='swiper-slide flex-shrink-0 p-5 w-full sm:w-1/2 md:w-1/2 lg:w-1/1 '
 							>
 								<RecomendCard {...props} />
-							</div>
+								</div>
+								</div>
 						))}
+					</Carousel>
 					</div>
 					<div className='swiper-scrollbar'></div>
 				</div>
