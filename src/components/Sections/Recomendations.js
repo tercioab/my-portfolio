@@ -53,7 +53,7 @@ export default function Recomendations() {
         <h1 className='text-3xl font-bold text-center mt-10 text-black'>
         {`< Recomendações />`}
         </h1>
-        <div className=' overflow-x-hidden border-x-2 border-green-400 rounded-3xl p-10 mx-10 mb-8'>
+        <div className=' overflow-x-hidden border-x-4 border-green-400 rounded-3xl p-10 mx-10 mb-8'>
             <div className='swiper-container border-x-2 border-gray-200 rounded-lg '>
                 <div className='swiper-wrapper flex  '>
 						{props.map((props, i) => (

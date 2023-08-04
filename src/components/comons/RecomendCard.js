@@ -1,7 +1,7 @@
 export default function RecomendCard({text, name, image, title}) {
     return (
 
-<div id="toast-message-cta" class="w-full h-full object-contain p-4 bg-black rounded-lg shadow border-x-2 border-green-400" >
+<div id="toast-message-cta" class="w-full h-full object-contain p-4 bg-black/80 rounded-lg shadow border-x-2 border-green-400" >
     <div class="flex">
                 <img class="w-8 h-8 rounded-full shadow-lg" src={image} />
         <div class="ml-3 text-sm font-normal">
