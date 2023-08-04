@@ -49,23 +49,21 @@ export default function Projects() {
 		},
 	];
 	useEffect(() => {
-		if (typeof window !== "undefined") {
-			new Swiper(".swiper-container-projects", {
-				slidesPerView: "auto",
-				spaceBetween: 1, // Espaçamento entre os slides
-				direction: "horizontal",
-				loop: true,
-			});
-		}
+		new Swiper(".swiper-container-projects", {
+			slidesPerView: "auto",
+			spaceBetween: 1, // Espaçamento entre os slides
+			direction: "horizontal",
+			loop: true,
+		});
 	}, []);
 
 	return (
 		<div className=' max-w-screen-xl mx-auto p-4  mb-10 overflow-x-hidden '>
 			<h1 className='text-3xl font-bold text-center mt-10 text-black'>
-			{`< Meus Projetos />`}
+				{`< Meus Projetos />`}
 			</h1>
 			<div className=' overflow-x-hidden border-x-4 border-green-400 rounded-3xl p-10 mx-10 mb-8  '>
-			<div className='swiper-container-projects border-x-2 border-gray-200 rounded-lg'>
+				<div className='swiper-container-projects border-x-2 border-gray-200 rounded-lg'>
 					<div className='swiper-wrapper flex '>
 						{props.map((props, i) => (
 							<div
